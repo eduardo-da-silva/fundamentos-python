@@ -80,6 +80,36 @@ Normalização de strings, limpeza e padronização de dados.
 
 **[Ir para a Aula 05](aulas/aula-05-transformacao.md)**
 
+### Aula 06 — Crescimento do projeto e responsabilidade de módulos
+
+Diagnóstico arquitetural do DataProcessor e primeira refatoração sem mudança funcional.
+
+**[Ir para a Aula 06](aulas/aula-06-arquitetura-crescimento.md)**
+
+### Aula 07 — Packages e estratégia de imports
+
+Migração para package Python e padronização de imports absolutos/relativos.
+
+**[Ir para a Aula 07](aulas/aula-07-packages-imports.md)**
+
+### Aula 08 — Camada core
+
+Separação das regras de negócio puras em uma camada dedicada.
+
+**[Ir para a Aula 08](aulas/aula-08-camada-core.md)**
+
+### Aula 09 — Camada services
+
+Orquestração de casos de uso e separação entre negócio e infraestrutura.
+
+**[Ir para a Aula 09](aulas/aula-09-camada-services.md)**
+
+### Aula 10 — Configuração e organização final (pré-POO)
+
+Centralização de configuração e consolidação da arquitetura para próxima fase.
+
+**[Ir para a Aula 10](aulas/aula-10-configuracao-organizacao.md)**
+
 ---
 
 ## Como usar este material

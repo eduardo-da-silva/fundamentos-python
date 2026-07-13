@@ -14,9 +14,16 @@ Ao final da Fase 1, o sistema vai:
 - Salvar os resultados em arquivos de saída
 - Registrar logs de execução
 
+No **Módulo 5**, o foco muda de funcionalidade para arquitetura:
+
+- reorganizar o projeto em camadas
+- separar regras de negócio de infraestrutura
+- centralizar configuração
+- preparar base para POO sem alterar comportamento funcional
+
 ---
 
-## Estrutura final do projeto
+## Estrutura ao fim da Fase 1 (Aula 05)
 
 ```
 dataprocessor/
@@ -36,6 +43,31 @@ dataprocessor/
         clientes_validos.csv
         erros.log
 ```
+
+    ## Estrutura ao fim do Módulo 5 (Aula 10)
+
+    ```text
+    dataprocessor/
+      main.py
+      dataprocessor/
+        __init__.py
+        config.py
+        core/
+          __init__.py
+          validacao.py
+          normalizacao.py
+          metricas.py
+        infra/
+          __init__.py
+          arquivos.py
+        services/
+          __init__.py
+          processamento_service.py
+      data/
+        clientes.csv
+        transacoes.csv
+        config.json
+    ```
 
 ---
 
@@ -64,6 +96,26 @@ flowchart TD
 | 03   | Ler dados reais de arquivos CSV e JSON              |
 | 04   | Separar registros válidos de inválidos              |
 | 05   | Normalizar dados e executar o pipeline completo     |
+| 06   | Revisar responsabilidades e extrair orquestração    |
+| 07   | Migrar para package e padronizar imports            |
+| 08   | Isolar regras de negócio na camada `core`           |
+| 09   | Criar camada `services` e separar infraestrutura    |
+| 10   | Centralizar configuração e consolidar arquitetura   |
+
+---
+
+## Mapa de camadas no fim do Módulo 5
+
+| Camada      | Responsabilidade                                 |
+| ----------- | ------------------------------------------------ |
+| `core`      | Regras puras de negócio                          |
+| `infra`     | Entrada de dados e acesso a recursos externos    |
+| `services`  | Casos de uso e orquestração do pipeline          |
+| `main.py`   | Entrada da aplicação (CLI)                       |
+
+!!! note "Invariante do módulo"
+
+  A arquitetura muda. O comportamento funcional permanece.
 
 ---
 

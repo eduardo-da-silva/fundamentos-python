@@ -1,0 +1,6 @@
+id,cliente_id,valor,categoria,data,status
+1,1,150.50,eletronicos,2023-05-10,aprovado
+2,2,200.00,roupas,2023-05-11,pendente
+3,3,-50.00,alimentacao,2023-05-12,aprovado
+4,1,300.00,eletronicos,2023-05-13,recusado
+5,10,120.00,livros,2023-05-14,aprovado
