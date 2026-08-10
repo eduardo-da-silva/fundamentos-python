@@ -1,0 +1,145 @@
+[project]
+site_name = "Fundamentos de Python"
+site_author = "Eduardo da Silva"
+site_description = "Curso prático de Python com foco em manipulação de dados e preparação para backend — 80 horas"
+site_url = "https://eduardo-da-silva.github.io/fundamentos-python"
+repo_url = "https://github.com/eduardo-da-silva/fundamentos-python"
+repo_name = "eduardo-da-silva/fundamentos-python"
+copyright = "Copyright &copy; 2026 Eduardo da Silva"
+
+nav = [
+  { "Início" = "index.md" },
+  { "Aulas" = [
+    "aulas/index.md",
+    { "Aula 01 — Introdução prática ao Python" = "aulas/aula-01-introducao.md" },
+    { "Aula 02 — Manipulação de dados" = "aulas/aula-02-manipulacao-dados.md" },
+    { "Aula 03 — Leitura de arquivos" = "aulas/aula-03-leitura-arquivos.md" },
+    { "Aula 04 — Validação de dados" = "aulas/aula-04-validacao.md" },
+    { "Aula 05 — Transformação de dados" = "aulas/aula-05-transformacao.md" },
+    { "Aula 06 — Crescimento do projeto e responsabilidade de módulos" = "aulas/aula-06-arquitetura-crescimento.md" },
+    { "Aula 07 — Packages e estratégia de imports" = "aulas/aula-07-packages-imports.md" },
+    { "Aula 08 — Camada core" = "aulas/aula-08-camada-core.md" },
+    { "Aula 09 — Camada services" = "aulas/aula-09-camada-services.md" },
+    { "Aula 10 — Configuração e organização final (pré-POO)" = "aulas/aula-10-configuracao-organizacao.md" },
+    { "Aula 11 — Entidades com dataclass" = "aulas/aula-11-entidades-dataclass.md" },
+  ] },
+  { "Projeto — DataProcessor CLI" = ["projeto/index.md"] },
+  { "Datasets" = ["datasets/index.md"] },
+]
+
+# ----------------------------------------------------------------------------
+# Tema
+# ----------------------------------------------------------------------------
+[project.theme]
+language = "pt-BR"
+features = [
+  "announce.dismiss",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.progress",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.share",
+  "search.suggest",
+  "toc.follow",
+]
+
+[project.theme.font]
+text = "Roboto"
+code = "Roboto Mono"
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Modo claro — azul Python
+[[project.theme.palette]]
+scheme = "default"
+primary = "blue"
+accent = "yellow"
+toggle.icon = "material/brightness-7"
+toggle.name = "Mudar para modo escuro"
+
+# Modo escuro
+[[project.theme.palette]]
+scheme = "slate"
+primary = "blue"
+accent = "yellow"
+toggle.icon = "material/brightness-4"
+toggle.name = "Mudar para modo claro"
+
+# ----------------------------------------------------------------------------
+# Extras
+# ----------------------------------------------------------------------------
+[project.extra]
+generator = false
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/eduardo-da-silva"
+name = "GitHub"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://linkedin.com/in/eduardo-da-silva"
+name = "LinkedIn"
+
+# ----------------------------------------------------------------------------
+# Plugins
+# ----------------------------------------------------------------------------
+[project.plugins.search]
+separator = '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+# ----------------------------------------------------------------------------
+# Extensões Markdown
+# ----------------------------------------------------------------------------
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.betterem]
+smart_enable = "all"
+
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+slugify = { object = "pymdownx.slugs.slugify", kwds = { case = "lower" } }
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+[project.markdown_extensions.pymdownx.tilde]

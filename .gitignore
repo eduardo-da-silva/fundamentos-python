@@ -1,5 +1,8 @@
-# Build gerado pelo MkDocs — o deploy é feito pelo CI (mkdocs gh-deploy)
+# Build gerado pelo Zensical — o deploy é feito pelo CI
 site/
+
+# Cache de build do Zensical
+.cache/
 
 # Python
 __pycache__/
