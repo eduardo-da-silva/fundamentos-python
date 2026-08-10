@@ -60,10 +60,10 @@ Por que `@dataclass(frozen=True)`?
 
 ## 3. Ajustando service para receber configuração
 
-```python linenums="1" title="dataprocessor/dataprocessor/services/processamento_service.py"
+```python linenums="1" title="dataprocessor/dataprocessor/services/processamento.py"
 from ..infra.arquivos import carregar_clientes, carregar_transacoes, carregar_config
-from ..core.validacao import validar_cliente, validar_transacao, separar_registros
-from ..core.normalizacao import transformar_clientes, transformar_transacoes
+from ..core.validador import validar_cliente, validar_transacao, separar_registros
+from ..core.transformador import transformar_clientes, transformar_transacoes
 from ..core.metricas import media_idade, total_aprovado
 
 
@@ -107,7 +107,7 @@ Agora o serviço recebe dependências de execução por contrato, não por strin
 
 ```python linenums="1" title="dataprocessor/main.py"
 from dataprocessor.config import carregar_configuracao_padrao
-from dataprocessor.services.processamento_service import executar_processamento
+from dataprocessor.services.processamento import executar_processamento
 
 
 def main():
@@ -165,15 +165,15 @@ dataprocessor/
         config.py
         core/
             __init__.py
-            validacao.py
-            normalizacao.py
+            validador.py
+            transformador.py
             metricas.py
         infra/
             __init__.py
             arquivos.py
         services/
             __init__.py
-            processamento_service.py
+            processamento.py
     data/
         clientes.csv
         transacoes.csv

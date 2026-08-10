@@ -110,6 +110,12 @@ Centralização de configuração e consolidação da arquitetura para próxima 
 
 **[Ir para a Aula 10](aulas/aula-10-configuracao-organizacao.md)**
 
+### Aula 11 — Entidades com `dataclass`
+
+Substituição dos dicionários por entidades explícitas e imutáveis do domínio.
+
+**[Ir para a Aula 11](aulas/aula-11-entidades-dataclass.md)**
+
 ---
 
 ## Como usar este material

@@ -45,8 +45,8 @@ dataprocessor/
         leitor.py
         core/
             __init__.py
-            validacao.py
-            normalizacao.py
+            validador.py
+            transformador.py
             metricas.py
 ```
 
@@ -56,7 +56,7 @@ Nesta etapa, ainda vamos manter `pipeline.py` e `leitor.py` fora de `core`.
 
 ## 3. Extraindo validação para `core`
 
-```python linenums="1" title="dataprocessor/dataprocessor/core/validacao.py"
+```python linenums="1" title="dataprocessor/dataprocessor/core/validador.py"
 from datetime import date
 
 
@@ -138,7 +138,7 @@ def separar_registros(registros, funcao_validar, **kwargs):
 
 ## 4. Extraindo normalização e métricas para `core`
 
-```python linenums="1" title="dataprocessor/dataprocessor/core/normalizacao.py"
+```python linenums="1" title="dataprocessor/dataprocessor/core/transformador.py"
 import unicodedata
 
 
@@ -217,8 +217,8 @@ def total_aprovado(transacoes):
 
 ```python linenums="1" title="dataprocessor/dataprocessor/pipeline.py"
 from .leitor import carregar_clientes, carregar_transacoes, carregar_config
-from .core.validacao import validar_cliente, validar_transacao, separar_registros
-from .core.normalizacao import transformar_clientes, transformar_transacoes
+from .core.validador import validar_cliente, validar_transacao, separar_registros
+from .core.transformador import transformar_clientes, transformar_transacoes
 from .core.metricas import media_idade, total_aprovado
 
 
@@ -300,7 +300,7 @@ A regra é idêntica. O ganho é estrutural.
 
 **Extrair regras para `core` sem quebrar a execução**
 
-1. Crie `core/validacao.py`, `core/normalizacao.py` e `core/metricas.py`
+1. Crie `core/validador.py`, `core/transformador.py` e `core/metricas.py`
 2. Mova as funções de regra para esses arquivos
 3. Atualize `pipeline.py` para importar da camada `core`
 4. Rode o projeto e compare métricas com a Aula 07

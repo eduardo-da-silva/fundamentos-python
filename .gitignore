@@ -1,0 +1,13 @@
+# Build gerado pelo MkDocs — o deploy é feito pelo CI (mkdocs gh-deploy)
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editores e sistema
+.DS_Store
+.idea/
+.vscode/

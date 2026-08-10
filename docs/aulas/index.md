@@ -14,6 +14,7 @@ Todas as aulas do curso são organizadas em sequência. Cada uma tem teoria, exe
 | [08](aula-08-camada-core.md)       | Camada core                  | Regras puras, separação de negócio              |
 | [09](aula-09-camada-services.md)   | Camada services              | Casos de uso, orquestração e infraestrutura     |
 | [10](aula-10-configuracao-organizacao.md) | Configuração e consolidação | Organização final pré-POO                       |
+| [11](aula-11-entidades-dataclass.md) | Entidades com `dataclass` | `@dataclass`, `frozen=True`, `replace()`     |
 
 ---
 
@@ -28,6 +29,20 @@ Neste módulo, o projeto **não ganha funcionalidades novas**. Ele ganha organiz
 !!! note "Diretriz do módulo"
 
 	Refatorar arquitetura sem quebrar regra de negócio é habilidade profissional central.
+
+## Módulo 6 — POO aplicada
+
+A partir da Aula 11 o projeto volta a **crescer em funcionalidade**, e cada recurso novo
+justifica um conceito de orientação a objetos:
+
+- entidades explícitas no lugar de dicionários (Aula 11)
+- relatórios em vários formatos exigindo polimorfismo
+- origens de dados intercambiáveis exigindo contrato de interface
+- CLI e logging fechando o ciclo do DataProcessor
+
+!!! note "Diretriz do módulo"
+
+	Classe nova só entra quando um requisito novo pede. POO não é enfeite de arquitetura.
 
 ## Dataset do curso
 

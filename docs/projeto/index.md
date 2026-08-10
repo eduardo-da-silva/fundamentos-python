@@ -44,30 +44,30 @@ dataprocessor/
         erros.log
 ```
 
-    ## Estrutura ao fim do Módulo 5 (Aula 10)
+## Estrutura ao fim do Módulo 5 (Aula 10)
 
-    ```text
+```text
+dataprocessor/
+    main.py
     dataprocessor/
-      main.py
-      dataprocessor/
         __init__.py
         config.py
         core/
-          __init__.py
-          validacao.py
-          normalizacao.py
-          metricas.py
+            __init__.py
+            validador.py
+            transformador.py
+            metricas.py
         infra/
-          __init__.py
-          arquivos.py
+            __init__.py
+            arquivos.py
         services/
-          __init__.py
-          processamento_service.py
-      data/
+            __init__.py
+            processamento.py
+    data/
         clientes.csv
         transacoes.csv
         config.json
-    ```
+```
 
 ---
 
@@ -75,14 +75,14 @@ dataprocessor/
 
 ```mermaid
 flowchart TD
-    A[Arquivos de entrada\nCSV + JSON] --> B[Leitura\nleitor.py]
-    B --> C[Validação\nvalidador.py]
+    A["Arquivos de entrada<br/>CSV + JSON"] --> B["Leitura<br/>leitor.py"]
+    B --> C["Validação<br/>validador.py"]
     C --> D{Válido?}
-    D -- Sim --> E[Transformação\ntransformador.py]
-    D -- Não --> F[Log de erros\nerros.log]
-    E --> G[Processamento\nprocessador.py]
-    G --> H[Relatório\nrelatorio.py]
-    H --> I[Saída\noutput/]
+    D -- Sim --> E["Transformação<br/>transformador.py"]
+    D -- Não --> F["Log de erros<br/>erros.log"]
+    E --> G["Processamento<br/>processador.py"]
+    G --> H["Relatório<br/>relatorio.py"]
+    H --> I["Saída<br/>output/"]
 ```
 
 ---
@@ -101,6 +101,7 @@ flowchart TD
 | 08   | Isolar regras de negócio na camada `core`           |
 | 09   | Criar camada `services` e separar infraestrutura    |
 | 10   | Centralizar configuração e consolidar arquitetura   |
+| 11   | Representar o domínio com entidades `Cliente`/`Transacao` |
 
 ---
 
@@ -115,7 +116,7 @@ flowchart TD
 
 !!! note "Invariante do módulo"
 
-  A arquitetura muda. O comportamento funcional permanece.
+    A arquitetura muda. O comportamento funcional permanece.
 
 ---
 

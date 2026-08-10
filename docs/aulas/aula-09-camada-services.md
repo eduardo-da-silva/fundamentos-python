@@ -40,15 +40,15 @@ dataprocessor/
         __init__.py
         core/
             __init__.py
-            validacao.py
-            normalizacao.py
+            validador.py
+            transformador.py
             metricas.py
         infra/
             __init__.py
             arquivos.py
         services/
             __init__.py
-            processamento_service.py
+            processamento.py
 ```
 
 Perceba que agora existe separação explícita entre regras de negócio e infraestrutura.
@@ -129,10 +129,10 @@ def carregar_config(caminho):
 
 ## 4. Camada services (caso de uso)
 
-```python linenums="1" title="dataprocessor/dataprocessor/services/processamento_service.py"
+```python linenums="1" title="dataprocessor/dataprocessor/services/processamento.py"
 from ..infra.arquivos import carregar_clientes, carregar_transacoes, carregar_config
-from ..core.validacao import validar_cliente, validar_transacao, separar_registros
-from ..core.normalizacao import transformar_clientes, transformar_transacoes
+from ..core.validador import validar_cliente, validar_transacao, separar_registros
+from ..core.transformador import transformar_clientes, transformar_transacoes
 from ..core.metricas import media_idade, total_aprovado
 
 
@@ -175,7 +175,7 @@ Agora a antiga lógica de `pipeline.py` está modelada como serviço de aplicaç
 ## 5. `main.py` como adaptador fino
 
 ```python linenums="1" title="dataprocessor/main.py"
-from dataprocessor.services.processamento_service import executar_processamento
+from dataprocessor.services.processamento import executar_processamento
 
 
 def main():
@@ -207,7 +207,7 @@ Esse desenho é equivalente a uma arquitetura com `services` em Node.js.
 === "Python"
 
     ```python linenums="1"
-    from dataprocessor.services.processamento_service import executar_processamento
+    from dataprocessor.services.processamento import executar_processamento
     resultado = executar_processamento("data/clientes.csv", "data/transacoes.csv", "data/config.json")
     ```
 
@@ -241,7 +241,7 @@ A ideia é a mesma: centralizar caso de uso em serviço reaproveitável.
 **Criar a camada services no DataProcessor**
 
 1. Crie `infra/arquivos.py` com as funções de leitura
-2. Crie `services/processamento_service.py` com `executar_processamento()`
+2. Crie `services/processamento.py` com `executar_processamento()`
 3. Atualize `main.py` para chamar o serviço
 4. Execute e valide que os números finais continuam iguais
 
