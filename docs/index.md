@@ -116,6 +116,13 @@ Substituição dos dicionários por entidades explícitas e imutáveis do domín
 
 **[Ir para a Aula 11](aulas/aula-11-entidades-dataclass.md)**
 
+### Aulas 12–15 — POO aplicada e integração
+
+Comportamento nas entidades, relatórios polimórficos, fontes de dados intercambiáveis,
+CLI, logging e testes automatizados.
+
+**[Ir para o índice das aulas](aulas/index.md)**
+
 ---
 
 ## Como usar este material

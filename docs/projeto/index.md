@@ -69,19 +69,47 @@ dataprocessor/
         config.json
 ```
 
+## Estrutura executável ao fim da Aula 15
+
+```text
+dataprocessor/
+    dataprocessor/
+        __main__.py
+        main.py
+        core/
+            entidades.py
+            resultados.py
+            validador.py
+            transformador.py
+            metricas.py
+        infra/
+            arquivos.py
+            fontes.py
+            relatorios.py
+        services/
+            processamento.py
+    data/
+    tests/
+    README.md
+```
+
+O service recebe uma `FonteDados`, uma classe abstrata que permite usar arquivos reais
+ou dados em memória nos testes. O resultado pode ser renderizado por qualquer classe
+concreta que herde de `GeradorRelatorio` e implemente `render(resultado)`.
+
 ---
 
 ## Pipeline de processamento
 
 ```mermaid
 flowchart TD
-    A["Arquivos de entrada<br/>CSV + JSON"] --> B["Leitura<br/>leitor.py"]
-    B --> C["Validação<br/>validador.py"]
+    A["Arquivos de entrada<br/>CSV + JSON"] --> B["Leitura<br/>infra/arquivos.py"]
+    B --> C["Validação<br/>core/validador.py"]
     C --> D{Válido?}
-    D -- Sim --> E["Transformação<br/>transformador.py"]
+    D -- Sim --> E["Transformação<br/>core/transformador.py"]
     D -- Não --> F["Log de erros<br/>erros.log"]
-    E --> G["Processamento<br/>processador.py"]
-    G --> H["Relatório<br/>relatorio.py"]
+    E --> G["Processamento<br/>services/processamento.py"]
+    G --> H["Relatório<br/>infra/relatorios.py"]
     H --> I["Saída<br/>output/"]
 ```
 
@@ -102,6 +130,10 @@ flowchart TD
 | 09   | Criar camada `services` e separar infraestrutura    |
 | 10   | Centralizar configuração e consolidar arquitetura   |
 | 11   | Representar o domínio com entidades `Cliente`/`Transacao` |
+| 12   | Adicionar comportamento às entidades e testes            |
+| 13   | Gerar relatórios com ABC, herança, texto, JSON e CSV      |
+| 14   | Isolar fontes de dados com ABC e herança                  |
+| 15   | Executar via CLI, salvar saídas e registrar logs          |
 
 ---
 
@@ -117,6 +149,9 @@ flowchart TD
 !!! note "Invariante do módulo"
 
     A arquitetura muda. O comportamento funcional permanece.
+
+No Módulo 6, as entidades e os adaptadores de entrada e saída ampliam essa estrutura,
+mas as regras continuam concentradas no `core`.
 
 ---
 
@@ -155,8 +190,21 @@ cd dataprocessor
 python main.py
 ```
 
-Nas fases seguintes do curso, o projeto vai aceitar argumentos de linha de comando:
+Para executar a CLI implementada nas Aulas 12–15:
 
 ```bash
 python main.py --clientes data/clientes.csv --config data/config.json --output output/
+```
+
+Na implementação executável das Aulas 12–15, use:
+
+```bash
+cd dataprocessor
+python -m unittest discover -s tests -v
+python -m dataprocessor \
+  --clientes data/clientes.csv \
+  --transacoes data/transacoes.csv \
+  --config data/config.json \
+  --formato json \
+  --output output/
 ```

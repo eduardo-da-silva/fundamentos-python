@@ -15,6 +15,10 @@ Todas as aulas do curso são organizadas em sequência. Cada uma tem teoria, exe
 | [09](aula-09-camada-services.md)   | Camada services              | Casos de uso, orquestração e infraestrutura     |
 | [10](aula-10-configuracao-organizacao.md) | Configuração e consolidação | Organização final pré-POO                       |
 | [11](aula-11-entidades-dataclass.md) | Entidades com `dataclass` | `@dataclass`, `frozen=True`, `replace()`     |
+| [12](aula-12-comportamento-entidades.md) | Comportamento nas entidades | `@property`, imutabilidade e testes |
+| [13](aula-13-relatorios-polimorfismo.md) | ABC e relatórios polimórficos | `ABC`, herança, texto, JSON e CSV |
+| [14](aula-14-fontes-dados-abc.md) | ABC para fontes de dados | Herança e fonte em memória |
+| [15](aula-15-cli-logging-integracao.md) | CLI e integração | `argparse`, logging e entrega final |
 
 ---
 
@@ -36,9 +40,10 @@ A partir da Aula 11 o projeto volta a **crescer em funcionalidade**, e cada recu
 justifica um conceito de orientação a objetos:
 
 - entidades explícitas no lugar de dicionários (Aula 11)
-- relatórios em vários formatos exigindo polimorfismo
-- origens de dados intercambiáveis exigindo contrato de interface
-- CLI e logging fechando o ciclo do DataProcessor
+- comportamento nas entidades e testes automatizados (Aula 12)
+- relatórios em vários formatos exigindo polimorfismo (Aula 13)
+- origens de dados intercambiáveis exigindo contrato de interface (Aula 14)
+- CLI e logging fechando o ciclo do DataProcessor (Aula 15)
 
 !!! note "Diretriz do módulo"
 
