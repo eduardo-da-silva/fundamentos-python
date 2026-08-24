@@ -1,0 +1,11 @@
+=== DataProcessor CLI ===
+
+[VALIDAÇÃO]
+Clientes válidos: 2
+Clientes inválidos: 3
+Transações válidas: 2
+Transações inválidas: 3
+
+[RELATÓRIO]
+Média de idade: 39.5
+Total aprovado: R$ 150.50

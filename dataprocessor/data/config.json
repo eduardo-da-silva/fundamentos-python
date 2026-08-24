@@ -1,0 +1,5 @@
+{
+  "categorias_validas": ["eletronicos", "roupas", "alimentacao", "livros"],
+  "status_validos": ["aprovado", "pendente", "recusado"],
+  "valor_minimo": 0
+}

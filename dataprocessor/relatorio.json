@@ -1,0 +1,126 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "email": "joao.silva@email.com",
+      "idade": 34,
+      "cidade": "Joinville",
+      "data_cadastro": "2023-01-10"
+    },
+    {
+      "id": 4,
+      "nome": "Ana Lima",
+      "email": "ana.lima@email.com",
+      "idade": 45,
+      "cidade": "Joinville",
+      "data_cadastro": "2023-01-25"
+    }
+  ],
+  "transacoes": [
+    {
+      "id": 1,
+      "cliente_id": 1,
+      "valor": 150.5,
+      "categoria": "eletronicos",
+      "data": "2023-05-10",
+      "status": "aprovado"
+    },
+    {
+      "id": 4,
+      "cliente_id": 1,
+      "valor": 300.0,
+      "categoria": "eletronicos",
+      "data": "2023-05-13",
+      "status": "recusado"
+    }
+  ],
+  "clientes_invalidos": [
+    {
+      "registro": {
+        "id": 2,
+        "nome": "Maria Souza",
+        "email": "maria@email",
+        "idade": 28,
+        "cidade": "Florianopolis",
+        "data_cadastro": "2023-02-15"
+      },
+      "erros": [
+        "email inválido: 'maria@email'"
+      ]
+    },
+    {
+      "registro": {
+        "id": 3,
+        "nome": "Carlos Pereira",
+        "email": "carlos.pereira@email.com",
+        "idade": -5,
+        "cidade": "Curitiba",
+        "data_cadastro": "2023-03-20"
+      },
+      "erros": [
+        "idade inválida: -5"
+      ]
+    },
+    {
+      "registro": {
+        "id": 5,
+        "nome": "Pedro Santos",
+        "email": "",
+        "idade": 38,
+        "cidade": "Sao Paulo",
+        "data_cadastro": "2023-02-30"
+      },
+      "erros": [
+        "email inválido: ''",
+        "data inválida: '2023-02-30'"
+      ]
+    }
+  ],
+  "transacoes_invalidas": [
+    {
+      "registro": {
+        "id": 2,
+        "cliente_id": 2,
+        "valor": 200.0,
+        "categoria": "roupas",
+        "data": "2023-05-11",
+        "status": "pendente"
+      },
+      "erros": [
+        "cliente_id inexistente: 2"
+      ]
+    },
+    {
+      "registro": {
+        "id": 3,
+        "cliente_id": 3,
+        "valor": -50.0,
+        "categoria": "alimentacao",
+        "data": "2023-05-12",
+        "status": "aprovado"
+      },
+      "erros": [
+        "cliente_id inexistente: 3",
+        "valor inválido: -50.0"
+      ]
+    },
+    {
+      "registro": {
+        "id": 5,
+        "cliente_id": 10,
+        "valor": 120.0,
+        "categoria": "livros",
+        "data": "2023-05-14",
+        "status": "aprovado"
+      },
+      "erros": [
+        "cliente_id inexistente: 10"
+      ]
+    }
+  ],
+  "metricas": {
+    "media_idade": 39.5,
+    "total_aprovado": 150.5
+  }
+}
