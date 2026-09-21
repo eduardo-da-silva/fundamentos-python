@@ -97,6 +97,38 @@ O service recebe uma `FonteDados`, uma classe abstrata que permite usar arquivos
 ou dados em memória nos testes. O resultado pode ser renderizado por qualquer classe
 concreta que herde de `GeradorRelatorio` e implemente `render(resultado)`.
 
+## Estrutura ao fim da Aula 20 (Módulo 7)
+
+```text
+dataprocessor/
+    dataprocessor/
+        __main__.py
+        main.py
+        core/
+            entidades.py
+            resultados.py
+            validador.py
+            transformador.py
+            metricas.py
+        infra/
+            arquivos.py
+            fontes.py
+            relatorios.py
+        services/
+            processamento.py
+        interfaces/
+            menu.py
+            api.py
+    data/
+    tests/
+    README.md
+```
+
+O pacote `interfaces` reúne as portas de entrada que chamam o mesmo
+`executar_processamento`: a CLI de argumentos (`main.py`), o menu interativo
+(`interfaces/menu.py`) e o endpoint REST de demonstração (`interfaces/api.py`, com
+FastAPI). Nenhuma delas decide regra de negócio — só decidem como recebem a entrada.
+
 ---
 
 ## Pipeline de processamento
@@ -134,6 +166,11 @@ flowchart TD
 | 13   | Gerar relatórios com ABC, herança, texto, JSON e CSV      |
 | 14   | Isolar fontes de dados com ABC e herança                  |
 | 15   | Executar via CLI, salvar saídas e registrar logs          |
+| 16   | Rodar via menu interativo em texto                         |
+| 17   | Manter estado de sessão e tratar entradas inválidas no menu |
+| 18   | Expor uma porta de entrada isolada e testável              |
+| 19   | Responder a requisições REST com FastAPI (trailer)         |
+| 20   | Documentar a arquitetura hexagonal do projeto              |
 
 ---
 
@@ -151,7 +188,23 @@ flowchart TD
     A arquitetura muda. O comportamento funcional permanece.
 
 No Módulo 6, as entidades e os adaptadores de entrada e saída ampliam essa estrutura,
-mas as regras continuam concentradas no `core`.
+mas as regras continuam concentradas no `core`. No Módulo 7, o pacote `interfaces`
+formaliza esses adaptadores de entrada (CLI, menu, REST) como camada própria — veja o
+mapa de camadas abaixo.
+
+## Mapa de camadas no fim do Módulo 7
+
+| Camada        | Responsabilidade                                          |
+| ------------- | ----------------------------------------------------------- |
+| `core`        | Regras puras de negócio                                     |
+| `infra`       | Leitura/escrita de dados e geração de relatórios             |
+| `services`    | Casos de uso e orquestração do pipeline                     |
+| `interfaces`  | Adaptadores de entrada: CLI (`main.py`), menu e REST (trailer) |
+
+!!! note "Invariante do módulo"
+
+    Nenhum adaptador de `interfaces` decide regra de negócio. Todos chamam o mesmo
+    `executar_processamento`.
 
 ---
 
@@ -207,4 +260,19 @@ python -m dataprocessor \
   --config data/config.json \
   --formato json \
   --output output/
+```
+
+A partir da Aula 16, o menu interativo roda com:
+
+```bash
+cd dataprocessor
+python -m dataprocessor.interfaces.menu
+```
+
+O trailer REST da Aula 19 exige um ambiente virtual com `fastapi` e `uvicorn`
+instalados (veja a aula para o passo a passo):
+
+```bash
+cd dataprocessor
+uvicorn dataprocessor.interfaces.api:app --reload
 ```

@@ -50,78 +50,36 @@ Este curso faz parte de uma trilha de aprendizado:
 
 ## Estrutura das aulas
 
-### Aula 01 — Introdução prática ao Python
+### Fase 1 — Fundamentos (Aulas 01–05)
 
-Sintaxe, diferenças com JS, listas e dicionários. Primeiro contato com o dataset do projeto.
+Sintaxe, listas e dicionários, loops, funções, leitura de CSV/JSON, validação e
+transformação de dados. Ao final, o primeiro pipeline funcional do DataProcessor.
 
 **[Ir para a Aula 01](aulas/aula-01-introducao.md)**
 
-### Aula 02 — Manipulação de dados
+### Módulo 5 — Arquitetura e organização (Aulas 06–10)
 
-Loops, funções, agregação. Cálculo de métricas sobre os dados.
-
-**[Ir para a Aula 02](aulas/aula-02-manipulacao-dados.md)**
-
-### Aula 03 — Leitura de arquivos
-
-Leitura de CSV e JSON com bibliotecas padrão.
-
-**[Ir para a Aula 03](aulas/aula-03-leitura-arquivos.md)**
-
-### Aula 04 — Validação de dados
-
-Funções de validação, tratamento de erros com exceptions.
-
-**[Ir para a Aula 04](aulas/aula-04-validacao.md)**
-
-### Aula 05 — Transformação de dados
-
-Normalização de strings, limpeza e padronização de dados.
-
-**[Ir para a Aula 05](aulas/aula-05-transformacao.md)**
-
-### Aula 06 — Crescimento do projeto e responsabilidade de módulos
-
-Diagnóstico arquitetural do DataProcessor e primeira refatoração sem mudança funcional.
+Diagnóstico arquitetural, migração para package, camadas `core`/`infra`/`services` e
+configuração centralizada — sem alterar o comportamento funcional.
 
 **[Ir para a Aula 06](aulas/aula-06-arquitetura-crescimento.md)**
 
-### Aula 07 — Packages e estratégia de imports
+### Módulo 6 — POO aplicada (Aulas 11–15)
 
-Migração para package Python e padronização de imports absolutos/relativos.
-
-**[Ir para a Aula 07](aulas/aula-07-packages-imports.md)**
-
-### Aula 08 — Camada core
-
-Separação das regras de negócio puras em uma camada dedicada.
-
-**[Ir para a Aula 08](aulas/aula-08-camada-core.md)**
-
-### Aula 09 — Camada services
-
-Orquestração de casos de uso e separação entre negócio e infraestrutura.
-
-**[Ir para a Aula 09](aulas/aula-09-camada-services.md)**
-
-### Aula 10 — Configuração e organização final (pré-POO)
-
-Centralização de configuração e consolidação da arquitetura para próxima fase.
-
-**[Ir para a Aula 10](aulas/aula-10-configuracao-organizacao.md)**
-
-### Aula 11 — Entidades com `dataclass`
-
-Substituição dos dicionários por entidades explícitas e imutáveis do domínio.
+Entidades com `dataclass`, comportamento e testes, relatórios polimórficos com `ABC`,
+fontes de dados intercambiáveis, CLI e logging.
 
 **[Ir para a Aula 11](aulas/aula-11-entidades-dataclass.md)**
 
-### Aulas 12–15 — POO aplicada e integração
+### Módulo 7 — Interfaces e portas de entrada (Aulas 16–20)
 
-Comportamento nas entidades, relatórios polimórficos, fontes de dados intercambiáveis,
-CLI, logging e testes automatizados.
+Menu interativo em texto, isolamento testável da porta de entrada, um endpoint REST de
+demonstração com FastAPI e o fechamento do curso com o nome do padrão construído:
+arquitetura hexagonal.
 
-**[Ir para o índice das aulas](aulas/index.md)**
+**[Ir para a Aula 16](aulas/aula-16-menu-interativo.md)**
+
+**[Ir para o índice completo das aulas](aulas/index.md)**
 
 ---
 
