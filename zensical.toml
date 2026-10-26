@@ -39,6 +39,13 @@ nav = [
       { "Aula 19 — Trailer: REST com FastAPI" = "aulas/aula-19-trailer-rest-fastapi.md" },
       { "Aula 20 — Arquitetura hexagonal e fechamento" = "aulas/aula-20-arquitetura-hexagonal.md" },
     ] },
+    { "Módulo 8 — API REST com FastAPI" = [
+      { "Aula 21 — Múltiplos endpoints e parâmetros" = "aulas/aula-21-multiplos-endpoints.md" },
+      { "Aula 22 — Schemas Pydantic" = "aulas/aula-22-schemas-pydantic.md" },
+      { "Aula 23 — Erros HTTP e injeção de dependências" = "aulas/aula-23-erros-http-dependencias.md" },
+      { "Aula 24 — Testando a API" = "aulas/aula-24-testando-a-api.md" },
+      { "Aula 25 — Configuração por ambiente e fechamento" = "aulas/aula-25-configuracao-fechamento.md" },
+    ] },
   ] },
   { "Projeto — DataProcessor CLI" = ["projeto/index.md"] },
   { "Datasets" = ["datasets/index.md"] },
