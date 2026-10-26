@@ -83,8 +83,9 @@ Se todas as respostas forem "não", a arquitetura está fazendo o trabalho dela.
 
 ## 5. O que vem depois
 
-- **Fase 2 — Desenvolvimento Web com FastAPI**: transforma `interfaces/api.py` em uma
-  API real, com múltiplos endpoints, validação e tratamento de erros HTTP.
+- **Fase 2 — Desenvolvimento Web com FastAPI** (Aulas 21–25): transforma
+  `interfaces/api.py` em uma API real, com múltiplos endpoints, validação e tratamento
+  de erros HTTP.
 - **Fase 3 — Banco de Dados com SQLAlchemy/PostgreSQL**: substitui `FonteDadosArquivos`
   por uma fonte que lê de banco — sem mudar `core` nem `services`, exatamente como você
   já fez ao criar `FonteDadosMemoria` na Aula 14.

@@ -79,6 +79,13 @@ arquitetura hexagonal.
 
 **[Ir para a Aula 16](aulas/aula-16-menu-interativo.md)**
 
+### Módulo 8 — API REST com FastAPI (Aulas 21–25)
+
+Múltiplos endpoints, schemas Pydantic, erros HTTP, injeção de dependências, testes da
+API e configuração por ambiente — a Fase 2 da trilha, ainda sobre o mesmo núcleo.
+
+**[Ir para a Aula 21](aulas/aula-21-multiplos-endpoints.md)**
+
 **[Ir para o índice completo das aulas](aulas/index.md)**
 
 ---

@@ -276,3 +276,12 @@ instalados (veja a aula para o passo a passo):
 cd dataprocessor
 uvicorn dataprocessor.interfaces.api:app --reload
 ```
+
+Para instalar as dependências da API de forma reproduzível (Aula 25) e rodar todos os
+testes:
+
+```bash
+cd dataprocessor
+pip install -e ".[api]"
+python -m unittest discover -s tests -v
+```

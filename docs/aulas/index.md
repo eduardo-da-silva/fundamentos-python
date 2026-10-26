@@ -81,6 +81,29 @@ Módulo 5: trocar a forma de entrada não exige tocar em `core` nem em `services
 
 	Cada nova porta de entrada é uma prova da arquitetura, não uma funcionalidade isolada.
 
+## Módulo 8 — API REST com FastAPI
+
+A Fase 2 transforma o trailer da Aula 19 em uma API completa — e o `core` continua sem
+uma linha nova.
+
+| Aula                               | Tema                         | Conteúdo-chave                                  |
+| ---------------------------------- | ---------------------------- | ----------------------------------------------- |
+| [21](aula-21-multiplos-endpoints.md) | Múltiplos endpoints | Parâmetros de rota e de consulta, `Response` |
+| [22](aula-22-schemas-pydantic.md) | Schemas Pydantic | `response_model`, `Literal`, `POST` com corpo |
+| [23](aula-23-erros-http-dependencias.md) | Erros HTTP e dependências | `HTTPException`, `exception_handler`, `Depends` |
+| [24](aula-24-testando-a-api.md) | Testando a API | `TestClient`, `dependency_overrides` |
+| [25](aula-25-configuracao-fechamento.md) | Configuração e fechamento | Variáveis de ambiente, `pyproject.toml` |
+
+- várias rotas de leitura com filtros e formatos (Aula 21)
+- contrato de entrada e saída separado da regra de negócio (Aula 22)
+- códigos de status corretos e fonte de dados injetada (Aula 23)
+- testes da API sem servidor, rede ou arquivos (Aula 24)
+- configuração por ambiente e dependências declaradas (Aula 25)
+
+!!! note "Diretriz do módulo"
+
+	O Pydantic valida a forma; o `core` valida o negócio. Nenhuma regra mora na rota.
+
 ## Dataset do curso
 
 Todos os exemplos usam os mesmos arquivos de dados: `clientes.csv`, `transacoes.csv` e `config.json`.
