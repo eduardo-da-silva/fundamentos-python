@@ -15,3 +15,8 @@ venv/
 .idea/
 .vscode/
 *.egg-info/
+
+# Saídas geradas pelo DataProcessor
+dataprocessor/output/
+dataprocessor/*.log
+dataprocessor/relatorio.*

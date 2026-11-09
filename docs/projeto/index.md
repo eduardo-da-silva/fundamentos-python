@@ -97,7 +97,7 @@ O service recebe uma `FonteDados`, uma classe abstrata que permite usar arquivos
 ou dados em memória nos testes. O resultado pode ser renderizado por qualquer classe
 concreta que herde de `GeradorRelatorio` e implemente `render(resultado)`.
 
-## Estrutura ao fim da Aula 20 (Módulo 7)
+## Estrutura ao fim do curso (Aula 25)
 
 ```text
 dataprocessor/
@@ -119,15 +119,24 @@ dataprocessor/
         interfaces/
             menu.py
             api.py
+            schemas.py
+            config.py
     data/
     tests/
+        test_cli.py
+        test_entidades.py
+        test_processamento.py
+        test_relatorios.py
+        test_menu.py
+        test_api.py
+    pyproject.toml
     README.md
 ```
 
 O pacote `interfaces` reúne as portas de entrada que chamam o mesmo
 `executar_processamento`: a CLI de argumentos (`main.py`), o menu interativo
-(`interfaces/menu.py`) e o endpoint REST de demonstração (`interfaces/api.py`, com
-FastAPI). Nenhuma delas decide regra de negócio — só decidem como recebem a entrada.
+(`interfaces/menu.py`) e a API REST (`interfaces/api.py`, com FastAPI; contratos em
+`schemas.py` e configuração por ambiente em `config.py`). Nenhuma delas decide regra de negócio — só decidem como recebem a entrada.
 
 ---
 

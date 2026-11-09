@@ -17,7 +17,7 @@ Aqui o foco é diferente:
 - Construir base sólida para **backend com FastAPI** (fase 2)
 - Entender como Python é usado em contextos reais
 
-Ao final deste curso, você terá construído um sistema CLI funcional do zero: o **DataProcessor**.
+Ao final deste curso, você terá construído do zero um sistema completo: o **DataProcessor**, com linha de comando, menu interativo e API REST.
 
 ---
 
@@ -31,9 +31,9 @@ Durante todo o curso, você vai construir o **DataProcessor CLI**, um consolidad
 - Cruza dados entre arquivos
 - Gera relatórios consolidados
 - Salva arquivos de saída e logs
-- Roda via **linha de comando**
+- Roda via **linha de comando**, **menu interativo** e **API REST** (FastAPI)
 
-Nenhum banco de dados. Nenhum framework web. Python puro com bibliotecas padrão.
+Nenhum banco de dados: a persistência fica para a Fase 3. Até a Aula 15 é Python puro com a biblioteca padrão; a partir da Aula 19, o FastAPI entra apenas como porta de entrada, sem alterar o núcleo.
 
 ---
 

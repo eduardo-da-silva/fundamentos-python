@@ -1,0 +1,12 @@
+[project]
+name = "dataprocessor"
+version = "0.1.0"
+description = "DataProcessor — projeto do curso Fundamentos de Python"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi", "uvicorn", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["dataprocessor*"]

@@ -46,3 +46,9 @@ class FonteDadosMemoria(FonteDados):
 
     def carregar_config(self) -> dict:
         return dict(self._config)
+
+
+def fonte_a_partir_de_caminhos(
+    caminho_clientes: str | Path, caminho_transacoes: str | Path, caminho_config: str | Path
+) -> FonteDados:
+    return FonteDadosArquivos(caminho_clientes, caminho_transacoes, caminho_config)

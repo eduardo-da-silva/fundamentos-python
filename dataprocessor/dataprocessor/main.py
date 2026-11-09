@@ -2,7 +2,7 @@ import argparse
 import logging
 from pathlib import Path
 
-from .infra.fontes import FonteDadosArquivos
+from .infra.fontes import fonte_a_partir_de_caminhos
 from .infra.relatorios import criar_gerador
 from .services.processamento import executar_processamento
 
@@ -28,7 +28,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     logging.info("Iniciando processamento")
     try:
-        fonte = FonteDadosArquivos(args.clientes, args.transacoes, args.config)
+        fonte = fonte_a_partir_de_caminhos(args.clientes, args.transacoes, args.config)
         resultado = executar_processamento(fonte)
         relatorio = criar_gerador(args.formato).render(resultado)
         nome = "relatorio.txt" if args.formato == "texto" else f"relatorio.{args.formato}"
