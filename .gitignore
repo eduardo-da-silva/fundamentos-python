@@ -20,3 +20,5 @@ venv/
 dataprocessor/output/
 dataprocessor/*.log
 dataprocessor/relatorio.*
+
+projeto-final-referencia/
