@@ -46,6 +46,7 @@ nav = [
       { "Aula 24 — Testando a API" = "aulas/aula-24-testando-a-api.md" },
       { "Aula 25 — Configuração por ambiente e fechamento" = "aulas/aula-25-configuracao-fechamento.md" },
     ] },
+    { "Projeto final — Painel de Notas" = "aulas/projeto-final.md" },
   ] },
   { "Projeto — DataProcessor CLI" = ["projeto/index.md"] },
   { "Datasets" = ["datasets/index.md"] },

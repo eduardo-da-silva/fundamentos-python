@@ -104,6 +104,11 @@ uma linha nova.
 
 	O Pydantic valida a forma; o `core` valida o negócio. Nenhuma regra mora na rota.
 
+## Projeto final
+
+Depois do Módulo 8, os estudantes aplicam o que aprenderam em um projeto autônomo de 3 a
+4 horas, com duas semanas de prazo: o **[Painel de Notas da Turma](projeto-final.md)**.
+
 ## Dataset do curso
 
 Todos os exemplos usam os mesmos arquivos de dados: `clientes.csv`, `transacoes.csv` e `config.json`.

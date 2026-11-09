@@ -1,0 +1,442 @@
+{
+  "resumo": {
+    "alunos_processados": 32,
+    "notas_validas": 457,
+    "notas_invalidas": 27,
+    "situacoes": {
+      "aprovado": 18,
+      "recuperação": 11,
+      "reprovado": 3
+    }
+  },
+  "alunos": [
+    {
+      "matricula": "1001",
+      "nome": "Ana Souza",
+      "turma": "3A",
+      "media": 8.05,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1002",
+      "nome": "Bruno Lima",
+      "turma": "3B",
+      "media": 7.89,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1003",
+      "nome": "Carla Dias",
+      "turma": "3C",
+      "media": 6.91,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1004",
+      "nome": "Daniel Rocha",
+      "turma": "3A",
+      "media": 6.22,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1005",
+      "nome": "Eduarda Martins",
+      "turma": "3B",
+      "media": 7.28,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1006",
+      "nome": "Felipe Andrade",
+      "turma": "3C",
+      "media": 6.89,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1007",
+      "nome": "Gabriela Nunes",
+      "turma": "3A",
+      "media": 6.95,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1008",
+      "nome": "Henrique Costa",
+      "turma": "3B",
+      "media": 9.35,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1009",
+      "nome": "Isabela Prado",
+      "turma": "3C",
+      "media": 6.59,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1010",
+      "nome": "João Pedro Alves",
+      "turma": "3A",
+      "media": 7.58,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1011",
+      "nome": "Karina Moreira",
+      "turma": "3B",
+      "media": 4.65,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1012",
+      "nome": "Leonardo Teixeira",
+      "turma": "3C",
+      "media": 4.66,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1013",
+      "nome": "Marina Ferreira",
+      "turma": "3A",
+      "media": 5.63,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1014",
+      "nome": "Nicolas Barros",
+      "turma": "3B",
+      "media": 4.49,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1015",
+      "nome": "Olívia Ribeiro",
+      "turma": "3C",
+      "media": 6.03,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1016",
+      "nome": "Paulo Henrique Cunha",
+      "turma": "3A",
+      "media": 4.45,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1017",
+      "nome": "Quésia Lopes",
+      "turma": "3B",
+      "media": 3.59,
+      "situacao": "reprovado"
+    },
+    {
+      "matricula": "1018",
+      "nome": "Rafael Monteiro",
+      "turma": "3C",
+      "media": 3.26,
+      "situacao": "reprovado"
+    },
+    {
+      "matricula": "1019",
+      "nome": "Sofia Carvalho",
+      "turma": "3A",
+      "media": 4.11,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1020",
+      "nome": "Thiago Azevedo",
+      "turma": "3B",
+      "media": 5.72,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1021",
+      "nome": "Úrsula Pinto",
+      "turma": "3C",
+      "media": 7.53,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1022",
+      "nome": "Vitor Hugo Melo",
+      "turma": "3A",
+      "media": 7.99,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1023",
+      "nome": "Wesley Santana",
+      "turma": "3B",
+      "media": 5.51,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1024",
+      "nome": "Yasmin Duarte",
+      "turma": "3C",
+      "media": 6.55,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1025",
+      "nome": "Zélia Campos",
+      "turma": "3A",
+      "media": 8.38,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1026",
+      "nome": "Arthur Machado",
+      "turma": "3B",
+      "media": 4.25,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1027",
+      "nome": "Beatriz Fontes",
+      "turma": "3C",
+      "media": 2.71,
+      "situacao": "reprovado"
+    },
+    {
+      "matricula": "1028",
+      "nome": "Caio Vasconcelos",
+      "turma": "3A",
+      "media": 6.62,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1029",
+      "nome": "Diana Siqueira",
+      "turma": "3B",
+      "media": 7.35,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1030",
+      "nome": "Enzo Borges",
+      "turma": "3C",
+      "media": 9.14,
+      "situacao": "aprovado"
+    },
+    {
+      "matricula": "1031",
+      "nome": "Fernanda Leal",
+      "turma": "3A",
+      "media": 5.66,
+      "situacao": "recuperação"
+    },
+    {
+      "matricula": "1032",
+      "nome": "Guilherme Torres",
+      "turma": "3B",
+      "media": 5.96,
+      "situacao": "recuperação"
+    }
+  ],
+  "disciplinas": [
+    {
+      "disciplina": "Física",
+      "media": 6.29
+    },
+    {
+      "disciplina": "História",
+      "media": 6.31
+    },
+    {
+      "disciplina": "Inglês",
+      "media": 6.02
+    },
+    {
+      "disciplina": "Matemática",
+      "media": 6.31
+    },
+    {
+      "disciplina": "Português",
+      "media": 6.18
+    }
+  ],
+  "erros": [
+    {
+      "arquivo": "alunos.csv",
+      "linha": 7,
+      "tipo": "matricula_duplicada",
+      "motivo": "matrícula 1004 já cadastrada"
+    },
+    {
+      "arquivo": "alunos.csv",
+      "linha": 15,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'nome' vazio"
+    },
+    {
+      "arquivo": "alunos.csv",
+      "linha": 23,
+      "tipo": "matricula_invalida",
+      "motivo": "matrícula '10x7' não é numérica"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 3,
+      "tipo": "matricula_inexistente",
+      "motivo": "matrícula inexistente (1033)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 35,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'nota' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 51,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'nota' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 52,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('--')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 65,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (12.0)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 80,
+      "tipo": "avaliacao_duplicada",
+      "motivo": "História/P2 já lançada para 1032"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 114,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (11.0)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 123,
+      "tipo": "matricula_inexistente",
+      "motivo": "matrícula inexistente (9999)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 162,
+      "tipo": "matricula_inexistente",
+      "motivo": "matrícula inexistente (2001)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 167,
+      "tipo": "matricula_inexistente",
+      "motivo": "matrícula inexistente (1099)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 177,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'avaliacao' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 180,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (100.0)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 206,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (10.5)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 215,
+      "tipo": "avaliacao_duplicada",
+      "motivo": "Física/P2 já lançada para 1027"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 217,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('dez')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 238,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (-1.0)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 240,
+      "tipo": "avaliacao_duplicada",
+      "motivo": "Inglês/P2 já lançada para 1008"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 269,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('abc')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 312,
+      "tipo": "nota_fora_do_intervalo",
+      "motivo": "nota fora do intervalo (-0.5)"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 325,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('NA')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 327,
+      "tipo": "avaliacao_duplicada",
+      "motivo": "Física/P1 já lançada para 1008"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 331,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('oito')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 343,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'matricula' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 396,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'disciplina' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 457,
+      "tipo": "nota_invalida",
+      "motivo": "nota inválida ('7.5.0')"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 461,
+      "tipo": "campo_vazio",
+      "motivo": "campo 'nota' vazio"
+    },
+    {
+      "arquivo": "notas.csv",
+      "linha": 465,
+      "tipo": "matricula_inexistente",
+      "motivo": "matrícula inexistente (1000)"
+    }
+  ]
+}

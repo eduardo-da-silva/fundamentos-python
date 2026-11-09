@@ -1,0 +1,126 @@
+{
+  "alunos.csv": [
+    {
+      "linha": 7,
+      "tipo": "matricula_duplicada"
+    },
+    {
+      "linha": 15,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 23,
+      "tipo": "matricula_invalida"
+    }
+  ],
+  "notas.csv": [
+    {
+      "linha": 3,
+      "tipo": "matricula_inexistente"
+    },
+    {
+      "linha": 35,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 51,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 52,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 65,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 80,
+      "tipo": "avaliacao_duplicada"
+    },
+    {
+      "linha": 114,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 123,
+      "tipo": "matricula_inexistente"
+    },
+    {
+      "linha": 162,
+      "tipo": "matricula_inexistente"
+    },
+    {
+      "linha": 167,
+      "tipo": "matricula_inexistente"
+    },
+    {
+      "linha": 177,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 180,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 206,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 215,
+      "tipo": "avaliacao_duplicada"
+    },
+    {
+      "linha": 217,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 238,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 240,
+      "tipo": "avaliacao_duplicada"
+    },
+    {
+      "linha": 269,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 312,
+      "tipo": "nota_fora_do_intervalo"
+    },
+    {
+      "linha": 325,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 327,
+      "tipo": "avaliacao_duplicada"
+    },
+    {
+      "linha": 331,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 343,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 396,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 457,
+      "tipo": "nota_invalida"
+    },
+    {
+      "linha": 461,
+      "tipo": "campo_vazio"
+    },
+    {
+      "linha": 465,
+      "tipo": "matricula_inexistente"
+    }
+  ]
+}
